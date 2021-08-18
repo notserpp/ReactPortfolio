@@ -36,7 +36,7 @@ const Navbar = () => {
     }
         , [vantaEffect])
     return (
-        <div>
+        <div id="nav">
             <div className="bg-image" ref={vantaRef}></div>
             <div className="main-section">
                 <nav className="autohide navbar navbar-expand-lg navbar-dark bg-transparent">

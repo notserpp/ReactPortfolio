@@ -43,13 +43,13 @@ body::-webkit-scrollbar {
   font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  margin: 0px 20px;
+  margin: 0px 10px;
   display: inline-block;
   position: relative;
   opacity: 0.75;
   padding-left: 0 !important;
   padding-right: 0 !important;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: white !important;
   font-family: 'Press Start 2P', cursive;
 }
@@ -83,6 +83,16 @@ body::-webkit-scrollbar {
   filter: brightness(90%);
 }
 .start-game:hover{
+  filter: invert(32%) sepia(13%) saturate(6190%) hue-rotate(115deg) brightness(98%) contrast(101%);
+  cursor: pointer;
+}
+
+.next-level{
+  position: relative;
+  margin-top: 300%;
+  filter: brightness(90%);
+}
+.next-level:hover{
   filter: invert(32%) sepia(13%) saturate(6190%) hue-rotate(115deg) brightness(98%) contrast(101%);
   cursor: pointer;
 }
