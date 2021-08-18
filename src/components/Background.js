@@ -16,6 +16,7 @@ const Background = (props) => {
                 minWidth: 200.00,
                 scale: 1.00,
                 scaleMobile: 1.00,
+                color: "#F12A46",
                 backgroundColor: "#212529"
 
             }))
