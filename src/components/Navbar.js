@@ -5,7 +5,7 @@ import $ from "jquery"
 
 const Navbar = () => {
     return (
-            <nav className="autohide navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav className="autohide navbar navbar-expand-lg navbar-dark bg-transparent">
                 <div className="container-fluid">
                     <img src={logo} className="logo" alt=""></img>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
