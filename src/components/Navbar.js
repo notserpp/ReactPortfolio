@@ -9,10 +9,11 @@ import NET from 'vanta/dist/vanta.net.min'
 const Navbar = () => {
     const [vantaEffect, setVantaEffect] = useState(0)
     const vantaRef = useRef(null)
-    const changeEffect = () => {
+    const changeEffect = (color) => {
         vantaEffect.setOptions({
-            color: '#008037'
+            color: "#008037" 
         })
+        
     }
     useEffect(() => {
         if (!vantaEffect) {
@@ -21,6 +22,7 @@ const Navbar = () => {
                 mouseControls: true,
                 touchControls: true,
                 gyroControls: false,
+                showDots: false,
                 minHeight: 1000,
                 minWidth: 200.00,
                 scale: 1.00,
@@ -57,7 +59,6 @@ const Navbar = () => {
                     <div className="text-center main-section"><button onClick={changeEffect} className="btn"><img src={startgame} className="img-fluid start-game" alt="start game"></img></button></div>
                 </Link>
             </div>
-
         </div>
     )
 }
@@ -80,12 +81,6 @@ $(document).ready(function () {
         });
         // window.addEventListener
     }
-
-    $(window).scroll(function() {
-        if ($('#specsallA').is(':visible')) {
-            // do your special stuff here
-        }
-    });
 })
 
 export default Navbar
