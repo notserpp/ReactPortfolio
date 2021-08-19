@@ -9,7 +9,7 @@ import NET from 'vanta/dist/vanta.net.min'
 const Navbar = () => {
     const [vantaEffect, setVantaEffect] = useState(0)
     const vantaRef = useRef(null)
-    const changeEffect = (color) => {
+    const changeEffect = () => {
         vantaEffect.setOptions({
             color: "#008037" 
         })
