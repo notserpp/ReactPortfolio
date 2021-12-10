@@ -1,6 +1,8 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import NET from 'vanta/dist/vanta.net.min'
+import Perf from 'react-addons-perf'; // ES6
+
 
 const MainBackground = () => {
     const [vantaEffect, setVantaEffect] = useState(0)
