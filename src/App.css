@@ -97,11 +97,35 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
+.portfolio{
+  max-height: 500px !important;
+  width: auto !important;
+}
+
+.portfolio-img {
+  position: relative;
+  width: 60%;
+  animation: breath .5s linear infinite;
+  margin-top: -10%;
+  cursor: pointer;
+  filter: brightness(75%);
+}
+
+.next-and-back-buttons-2{
+  margin-top: -10%;
+}
+
+
+
 .main-section{
   height: 200vh;
 }
 
 .about-section{
+  height: 200vh;
+}
+
+.portfolio-section{
   height: 200vh;
 }
 
@@ -118,6 +142,14 @@ body::-webkit-scrollbar {
   cursor: pointer;
 }
 
+.selected{
+  box-shadow:0px 10px 22px 8px black;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
 .zoom {
   transition: transform .2s linear;
 }
@@ -125,7 +157,7 @@ body::-webkit-scrollbar {
 .zoom:hover {
   -webkit-animation: breathing 2s ease-out infinite normal;
   animation: breathing 2s ease-out infinite normal;
-  filter: brightness(150%);
+  filter: brightness(125%);
   
 }
 
@@ -133,8 +165,8 @@ body::-webkit-scrollbar {
 .choose-character{
   filter: brightness(90%);
   position: relative;
-  width: 500px;
-  margin-top: -2%;
+  margin-top: -12%;
+  margin-bottom: -12%;
 }
 
 .figure-caption{
@@ -146,6 +178,13 @@ body::-webkit-scrollbar {
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 3%;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
 }
 
 
